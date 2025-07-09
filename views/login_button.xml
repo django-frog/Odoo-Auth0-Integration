@@ -1,0 +1,16 @@
+<odoo>
+    <template id="auth0_multiple_buttons" inherit_id="web.login" name="Auth0 Multiple Providers">
+        <xpath expr="//div[contains(@class, 'oe_login_buttons')]" position="inside">
+            <div class="text-center mb-2">
+                <a href="/auth0/login?provider=google-oauth2" class="btn btn-danger btn-block">
+                    Sign in with Google
+                </a>
+            </div>
+            <div class="text-center mb-2">
+                <a href="/auth0/login?provider=github" class="btn btn-dark btn-block">
+                    Sign in with GitHub
+                </a>
+            </div>
+        </xpath>
+    </template>
+</odoo>
